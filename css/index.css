@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Imprima|Open+Sanss');
+@import "./base64.css";
+
+body{
+    background-image: var(--astronaut-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    background-color: rgba(0,0,0,.2);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left:0px;
+}
+.salutations{
+    font-family: 'Imprima', sans-serif;
+    font-size: 40px;
+    color: #ffff;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.module-search{
+    position: relative;
+    width: 50%;
+    left: calc(25% - 61px);
+    display: inline-block;
+    min-height: 57px;
+}
+
+#search-input{
+    position: absolute;
+    border: 0px;
+    outline: none;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 29px;
+    line-height: 57px !important;
+    padding: 0 90px 0 32px !important;
+    min-height: 56px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    width: 100%;
+}
+
+.divider{
+    display: inline-block;
+    position: relative;
+    height: 41px;
+    width: 1px;
+    background: #dbdbdb;
+    top: 8px;
+    margin-right: 10px;
+}
+.search-button{
+    position: absolute;
+    right: -100px;
+}
+
+#go_search{
+    cursor: pointer;
+}
+
+.blur-effect:before{
+    background-image: var(--astronaut-image);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: center -280px;
+    filter: blur(4px);
+    position: absolute;
+    content:'';
+    z-index:-1;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+}
+
+.appsBackground{
+    position: relative;
+    width: 40vw;
+    left: 30vw;
+    height: 204px;
+    margin-top: 100px;
+}
+
+.appsContainer{
+    background-color: rgba(0,0,0,.3);
+    position: relative;
+    height: 208px;
+    top:-2px;
+    left:-2px;
+    padding-left: 6.78%;
+}
+
+#listApps{
+    margin-top: 15px;
+}
+
+#listApps, .itemList{
+    display: inline-block;
+}
+
+.row>.itemList{
+    text-align: center;
+}
+
+
+
+.itemList{
+    width: 60px;
+}
+
+.row>.itemList:nth-child(n+2){
+    margin-left: 80px;
+}
+
+.row:nth-child(n+2){
+    margin-top: 35px;
+}
+
+.iconApp{
+    height: 50px;
+    width: 50px;
+}
+
+.rounded{
+    border-radius: 5px;
+}
+
+.wrapIcon{
+    margin-bottom: 5px;
+}
+
+a,a:hover,a:visited{
+    text-decoration: none;
+}
+
+.nameApp{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+.bottom_bar{
+    width: 100%;
+    min-height: 80px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background: linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,0));
+    padding-top: 20px;
+}
+
+.weather{
+    float: right;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+#celsiusIcon{
+    font-size: 20px;
+}
+
+#tempValue, #celsiusIcon{
+    vertical-align: middle;
+}
+
+.temperature{
+    font-family: 'Imprima', sans-serif;
+    font-size: 35px;
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+#weatherIcon{
+    font-size: 100px;
+}
+
+.time{
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+    color: white;
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#clock>li{
+    display: inline-block;
+    font-size: 30px;
+}
+#clock{
+    text-align: right;
+}

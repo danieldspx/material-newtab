@@ -1,0 +1,9 @@
+{
+    "name": "New Tab Override",
+    "version": "1.0",
+    "description": "Override your New Tab page with pages created for you",
+    "manifest_version": 2,
+    "chrome_url_overrides" : {
+        "newtab": "index.html"
+    }
+}
