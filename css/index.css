@@ -94,34 +94,19 @@ body{
     height: 208px;
     top:-2px;
     left:-2px;
-    padding-left: 6.78%;
 }
 
-#listApps{
-    margin-top: 15px;
-}
-
-#listApps, .itemList{
-    display: inline-block;
-}
-
-.row>.itemList{
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    grid-auto-flow: row;
     text-align: center;
-}
-
-
-
-.itemList{
-    width: 60px;
-}
-
-.row>.itemList:nth-child(n+2){
-    margin-left: 80px;
-}
-
-.row:nth-child(n+2){
-    margin-top: 35px;
-}
+    grid-gap: 10px;
+    grid-row-gap: 30px;
+    padding: 15px 0;
+ }/* Grid para distribuir os atalhos na div */
 
 .iconApp{
     height: 50px;
