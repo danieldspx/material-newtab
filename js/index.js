@@ -1,3 +1,10 @@
+var groups = [];
+
+groups[1] = [1,2,3,4,6,7,8,12,13];//Favoritos
+groups[2] = [3,4,5,6,7,11,8,9,14,10,15,20];//Developers
+groups[3] = [16,1,17,18,19];//Entretenimento
+groups.activated = "0";
+
 $(document).ready(function(){
     weather();//Update the weather
     $('#search-input').focus();
@@ -9,6 +16,7 @@ $(document).ready(function(){
     }
     var el = document.querySelector('.appsContainer');
     SimpleScrollbar.initEl(el);
+    activateGroup(document.getElementById('group1'));
 });
 
 $('#search-input').keypress(function(event){
@@ -39,3 +47,29 @@ function weather(){
         }
     });
 }
+
+function activateGroup(element){//Ativar a aba do grupo de icones
+    $(".groupActivated").removeClass('groupActivated');
+    $(element).toggleClass('groupActivated');
+    var id = $(element).attr('id').replace('group','');
+    console.log(groups);
+    if(groups.activated != id){
+        if(groups.activated != 0){
+            groups[groups.activated].forEach(function(entry){//Old group, set to display none
+                $('#item'+entry).css('display','none');
+            });
+        }
+        groups[id].forEach(function(entry){//New group, set to display block
+            $('#item'+entry).css('display','block');
+        });
+        groups.activated = id;
+    }
+}
+
+$(".groupItem").click(function(element){//Trigger para ativar as abas de icones
+    if($(element.target).hasClass('mdi')){
+        activateGroup($(element.target).parent());
+    } else {
+        activateGroup(element.target);
+    }
+});
