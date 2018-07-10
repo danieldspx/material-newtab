@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Imprima|Open+Sanss');
 @import "./base64.css";
 
+
 body{
-    background-image: var(--astronaut-image);
+    background: var(--astronaut-image);
     background-repeat: no-repeat;
     background-size: cover;
 }
