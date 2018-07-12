@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Imprima|Open+Sanss');
 @import "./base64.css";
 
-
 body{
     background: var(--astronaut-image);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    background-position: center;
 }
 .container{
     background-color: rgba(0,0,0,.2);
@@ -66,33 +67,30 @@ body{
     cursor: pointer;
 }
 
-.blur-effect:before{
-    background-image: var(--astronaut-image);
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    background-position: center -280px;
-    filter: blur(4px);
-    position: absolute;
-    content:'';
-    z-index:-1;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
-}
-
 .appsBackground{
     position: relative;
     width: 40vw;
     left: 30vw;
-    height: 204px;
+    height: 254px;
     margin-top: 100px;
+}
+
+.blur-effect{
+  width: 100%;
+  height: 100%;
+  background: var(--astronaut-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  filter: blur(3px);
+  position: absolute;
 }
 
 .appsContainer{
     background-color: rgba(0,0,0,.3);
     position: relative;
-    height: 208px;
+    height: 258px;
     top:-2px;
     left:-2px;
 }
@@ -212,4 +210,37 @@ a,a:hover,a:visited{
 }
 #clock{
     text-align: right;
+}
+
+@media(max-width: 750px){
+    .appsBackground{
+        margin-top: 20px;
+        width: 90vw;
+        left: 5vw;
+    }
+}
+
+@media(max-width: 1000px){
+    .appsBackground{
+        width: 70vw;
+        left: 15vw;
+    }
+}
+
+@media(max-height: 600px){
+    .appsBackground{
+        margin-top: 20px;
+    }
+    .bottom_bar{
+        display: none;
+    }
+}
+
+@media(max-height: 650px){
+    .appsBackground{
+        margin-top: 50px;
+    }
+    .bottom_bar{
+        display: none;
+    }
 }

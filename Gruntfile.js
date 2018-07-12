@@ -2,21 +2,21 @@ module.exports = function(grunt){
     grunt.initConfig({
         watch: {
             js: {
-                files: ['js/**/*.js'],
+                files: ['js/**/*.js','!js/**/*.min.js'],
                 tasks: ['uglify:js'],
             },
             css: {
-                files: ['css/**/*.css'],
-                tasks: ['cssmin'],
+                files: ['css/**/*.css','!css/**/*.min.css'],
+                tasks: ['cssmin:target'],
             },
         },
         cssmin: {
             target: {
                 files: [{
                     expand: true,
-                    cwd: 'css',
+                    cwd: 'css/',
                     src: ['*.css', '!*.min.css'],
-                    dest: 'css',
+                    dest: 'css/',
                     ext: '.min.css'
                 }]
             }

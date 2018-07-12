@@ -5,7 +5,7 @@ This project is a simple page that aims to make our life easier organizing user'
 
 It is useful to access websites that you frequently use, it is easier than using "Favorites page" on the browser. In this way you save time to do others amazing stuff.
 
-----------
+
 
 
 Functionalities
@@ -17,15 +17,11 @@ Functionalities
  - Change background image to one you like
 
 
-----------
-
 
 <i class="icon-cog"></i>Getting Started
 -------------
 
- 1. The project should be accessed throught http://localhost/newtab/.
- 2. Access extensions settings page, enable developer mode and load **manifest.json** that can be founded in project's folder.
- 3. Set up your browser to open in this link http://localhost/newtab/
+ 1. Access extensions settings page, enable developer mode and load **manifest.json** that can be founded in the project's folder. That's it.
 
 The extension you added will call up our page to be displayed whenever a new tab is created.
 
