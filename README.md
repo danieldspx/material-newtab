@@ -30,4 +30,4 @@ Result
 
 
  If you did everything correctly, you may see something like this:
- ![página Newtab](https://i.imgur.com/jGf4zh8.png)
+ ![página Newtab](https://i.imgur.com/x6DsfBl.png)

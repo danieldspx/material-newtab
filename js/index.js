@@ -10,7 +10,7 @@ config.weather.lang = "pt";//For english use 'en'
 
 //Add the item id, in HTML you have #item1 so its id here is just 1
 groups[1] = [1,2,3,4,6,7,8,12,13,22];//Starred group
-groups[2] = [3,4,5,6,7,11,8,9,14,10,15,20];//Developer group
+groups[2] = [3,4,5,6,7,11,8,9,14,10,15,20,21];//Developer group
 groups[3] = [16,1,17,18,19];//Entertainment group
 groups.activated = "0";
 
