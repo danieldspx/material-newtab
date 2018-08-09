@@ -4,16 +4,16 @@ config.weather = [];
 
 //Initial Configuration
 config.name = "Daniel";
-config.weather.appid = "YourAPIKeyHere"; //Get your APPID for free on https://openweathermap.org/
+config.weather.appid = "9f47d6183a09519ee3d17a5e1f679c4b"; //Get your APPID for free on https://openweathermap.org/
 config.weather.cityId = "3455161"; //Your City ID here https://openweathermap.org/city (id will be on URL when you search your city)
 config.weather.lang = "pt";//For english use 'en'
 
 //Add the item id, in HTML you have #item1 so its id here is just 1
 groups[1] = [1,2,3,4,6,7,8,12,13,22];//Starred group
-groups[2] = [3,4,5,6,7,11,8,9,14,10,15,20,21];//Developer group
-groups[3] = [16,1,17,18,19];//Entertainment group
+groups[2] = [3,4,5,6,7,11,8,9,14,10,15,20,21,23,25,26,31];//Developer group
+groups[3] = [24,28,29,30];//Design Group
+groups[4] = [16,1,17,18,19,27,32];//Entertainment group
 groups.activated = "0";
-
 
 $(document).ready(function(){
     weather();//Update the weather
